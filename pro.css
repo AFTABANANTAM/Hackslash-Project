@@ -577,6 +577,9 @@ pre {
 /* Media Queries for 320px Screens */
 @media (max-width: 320px) {
     /* About Section Adjustments */
+    html{
+        width:500px
+    }
     #abt{
         padding-left:80px ;
     }
@@ -611,6 +614,7 @@ pre {
     /* Services Section Adjustments */
     #services h2 {
         font-size: 24px;
+        margin-top:150px;
     }
 
     .bdt p, .fdt p {
