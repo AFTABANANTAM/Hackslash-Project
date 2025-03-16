@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -12,7 +11,6 @@ header {
     padding: 0px;
     position: relative;
     z-index: 2;
-    margin-left: 100px
 }
 
 #bold {
@@ -61,7 +59,29 @@ nav ul li {
 }
 
 /* Media Queries for Mobile Devices (Max width 768px) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack logo, links, and button vertically */
+        align-items: center; /* Center items */
+    }
 
+    .logo {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Add bottom margin for spacing */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack list items vertically */
+        margin: 10px 0; /* Adjust margins */
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .btn {
+        margin-left: 0; /* Remove left margin */
+        width: 90%; /* Make button take up more width */
+    }
+}
 
 
 section {
@@ -119,6 +139,36 @@ pre {
 }
 
 /* Media Queries for Section */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column; /* Stack left and right sections */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .left, .right {
+        height: auto; /* Adjust height for content */
+        padding: 20px; /* Add padding for spacing */
+    }
+
+    #text {
+        font-size: 36px; /* Reduce font size */
+        margin-top: 20px;
+    }
+
+    #text1 {
+        font-size: 30px;
+    }
+
+    pre {
+        font-size: 18px; /* Reduce font size */
+        margin-bottom: 20px;
+    }
+
+    .btn2 {
+        width: 90%; /* Adjust button width */
+        margin-left: 0;
+    }
+}
 
 
 
@@ -148,7 +198,33 @@ pre {
     font-size: xx-large;
 }
 
+/* Media Queries for About Section */
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        height: auto;
+    }
 
+    .abtimg img {
+        margin: 20px auto;
+        margin-left: 0px;
+        width: 90%;
+        display: block;
+    }
+
+    .abttxt {
+        padding: 20px;
+    }
+
+    .abttxt p, .abttxt h1 {
+        margin-left: 0px;
+        text-align: center; /* Explicitly center text */
+    }
+
+    .abttxt {
+        text-align: center; /* Center the entire text container */
+    }
+}
 
 #services {
     text-align: center;
@@ -219,7 +295,32 @@ pre {
 }
 
 /* Media Queries for Services Section */
+@media (max-width: 768px) {
+    #services {
+        flex-direction: column; /* Stack service items */
+    }
 
+    .bdt, .fdt {
+        margin: 20px auto; /* Center items */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .bdi, .fdi{
+        margin: 10px auto;
+        margin-left: 0;
+    }
+
+    .bdt p, .fdt p{
+        font-size: 14px;
+    }
+
+    .bdb, .fdb {
+        font-size: 8px;
+        width: 100px;
+    }
+
+}
 
 
 
@@ -278,6 +379,15 @@ pre {
 }
 
 /* Media Queries for Post Section */
+@media (max-width: 768px) {
+    #post {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .post {
+        padding: 20px; /* Adjust padding */
+    }
+}
 
 
 
@@ -354,7 +464,22 @@ pre {
 }
 
 /* Media Queries for Card Section */
+@media (max-width: 768px) {
+    .card-section {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center cards */
+    }
 
+    .card {
+        width: 90%; /* Adjust card width */
+        height: auto;
+        margin: 20px 0; /* Add vertical spacing */
+    }
+
+    .cont1{
+        margin-left: 0px;
+    }
+}
 
 
 .conta {
@@ -426,6 +551,26 @@ pre {
 }
 
 /* Media Queries for Background Image and Footer */
+@media (max-width: 768px) {
+    .anu {
+        flex-direction: column; /* Stack text and button */
+        align-items: flex-start; /* Align to the left */
+    }
+
+    .anb {
+        text-align: left; /* Align button to the left */
+        margin-top: 20px; /* Add spacing */
+    }
+
+    .footer {
+        flex-direction: column; /* Stack footer items */
+        align-items: flex-start; /* Align to the left */
+    }
+
+    .footer-right {
+        margin-top: 10px; /* Add spacing */
+    }
+}
 
 /* Existing CSS (including previous media queries) */
 
