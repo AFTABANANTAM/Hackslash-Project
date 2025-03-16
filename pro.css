@@ -575,7 +575,7 @@ pre {
 /* Existing CSS (including previous media queries) */
 
 /* Media Queries for 320px Screens */
-@media (max-width: 320px) {
+@media (max-width: 400px) {
     /* About Section Adjustments */
     html{
         width:500px
