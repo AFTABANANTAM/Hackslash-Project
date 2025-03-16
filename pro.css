@@ -639,7 +639,9 @@ pre {
     #we {
         font-size: 12px;
     }
-
+    canvas{
+        display:none;
+    }
     /* Footer adjustments */
     .footer-left img {
         width: 30px;
