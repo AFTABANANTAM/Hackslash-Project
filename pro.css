@@ -58,28 +58,29 @@ nav ul li {
     z-index: 2;
 }
 
-/* Media Queries for Mobile Devices (Max width 768px) */
+
 @media (max-width: 768px) {
     nav {
-        flex-direction: column; /* Stack logo, links, and button vertically */
-        align-items: center; /* Center items */
+        margin-left:75px;
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .logo {
-        margin-right: 0; /* Remove right margin */
-        margin-bottom: 10px; /* Add bottom margin for spacing */
+        margin-right: 0; 
+        margin-bottom: 10px; 
     }
 
     nav ul {
-        flex-direction: column; /* Stack list items vertically */
-        margin: 10px 0; /* Adjust margins */
+        flex-direction: column;
+        margin: 10px 0; 
         margin-right: 0;
         margin-left: 0;
     }
 
     .btn {
-        margin-left: 0; /* Remove left margin */
-        width: 90%; /* Make button take up more width */
+        margin-left: 0; 
+        width: 90%; 
     }
 }
 
@@ -138,20 +139,21 @@ pre {
     border: white 2px solid;
 }
 
-/* Media Queries for Section */
+
 @media (max-width: 768px) {
     section {
-        flex-direction: column; /* Stack left and right sections */
-        height: auto; /* Allow height to adjust */
+        margin-left:25px;
+        flex-direction: column; 
+        height: auto;
     }
 
     .left, .right {
-        height: auto; /* Adjust height for content */
-        padding: 20px; /* Add padding for spacing */
+        height: auto; 
+        padding: 20px; 
     }
 
     #text {
-        font-size: 36px; /* Reduce font size */
+        font-size: 36px; 
         margin-top: 20px;
     }
 
@@ -160,12 +162,12 @@ pre {
     }
 
     pre {
-        font-size: 18px; /* Reduce font size */
+        font-size: 18px; 
         margin-bottom: 20px;
     }
 
     .btn2 {
-        width: 90%; /* Adjust button width */
+        width: 90%;
         margin-left: 0;
     }
 }
@@ -198,7 +200,7 @@ pre {
     font-size: xx-large;
 }
 
-/* Media Queries for About Section */
+
 @media (max-width: 768px) {
     #about {
         flex-direction: column;
@@ -214,15 +216,16 @@ pre {
 
     .abttxt {
         padding: 20px;
+        margin-left:-30px;
     }
 
     .abttxt p, .abttxt h1 {
         margin-left: 0px;
-        text-align: center; /* Explicitly center text */
+        text-align: center; 
     }
 
     .abttxt {
-        text-align: center; /* Center the entire text container */
+        text-align: center;
     }
 }
 
@@ -297,7 +300,8 @@ pre {
 /* Media Queries for Services Section */
 @media (max-width: 768px) {
     #services {
-        flex-direction: column; /* Stack service items */
+        flex-direction: column; 
+        margin-left:45px;
     }
 
     .bdt, .fdt {
@@ -381,7 +385,9 @@ pre {
 /* Media Queries for Post Section */
 @media (max-width: 768px) {
     #post {
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr;
+        margin-left:25px;
+        margin-right:-45px;
     }
 
     .post {
@@ -584,7 +590,7 @@ pre {
         padding-left:80px ;
     }
     #about {
-        padding: 10px; /* Reduced padding */
+        padding: 20px; /* Reduced padding */
     }
 
     .abttxt h1 {
@@ -598,7 +604,8 @@ pre {
     }
 
     .abtimg img {
-        width: 100%; /* Image takes full width */
+        margin-left:-3px;
+        width: 100%; 
     }
 
     /* Navigation Adjustments */
@@ -607,8 +614,8 @@ pre {
     }
 
     .btn {
-        font-size: 14px; /* Smaller button text */
-        padding: 8px 12px; /* Reduced button padding */
+        width:275px;
+        font-size: 14px; 
     }
 
     /* Services Section Adjustments */
